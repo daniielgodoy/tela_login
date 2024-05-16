@@ -1,0 +1,298 @@
+div#body{
+    width: 100%;
+    height: 100%;
+    position:absolute; top: 0%; left: 0%;
+    background-color: rgb(240,240,240);
+}
+div#telas{
+    position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
+}
+div#signin{
+    position: relative; float: left;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(255,255,255), rgb(240, 240, 240));
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+div#signup{
+    position: relative; float: right;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(255,0,0), rgb(255, 0, 65));
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 2);
+}
+.signin-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin-itens h1{
+    position: relative; float: left;
+    margin-top: 70%;
+    color: black;
+    font-family: 'Verdana';
+    font-size: 35pt;
+    cursor: default;
+}
+div#campos{
+    position: absolute; top: 60%; left: 50%;transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputtext{
+    position: relative; float: left;
+    width: 90%;
+    height: 65%;
+}
+input#username{
+    display: none;
+}
+.inputtext input{
+    position: relative; float: left;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: rgb(130, 130, 130);
+    text-indent: 3%;
+    content: "Email";
+}
+div#forgot{
+    position: absolute; top: 85%; left: 50%;transform: translate(-50%, -50%);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#forgot a{
+    color: rgb(112, 112, 112);
+    font-family: 'Verdana';
+    font-size: 11pt;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+div#btn{
+    position: absolute; top: 80%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 7.5%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    cursor: pointer;
+}
+div#btn:hover{
+    position: absolute; top: 80%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 8%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    transition: 1s;
+}
+.logos{
+    position: absolute; top: 38%; left: 50%;transform: translate(-50%, -50%);
+    width: 30%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos div{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+.logos div:hover{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 2);
+    border-radius: 100%;
+}
+div#google img{
+    height: 70%;
+}
+div#facebook img{
+    height: 60%;
+}
+div#linkedin img{
+    height: 50%;
+}
+div#your{
+    position: absolute; top: 2%; left: 50%;transform: translate(-50%, -50%);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#your p{
+    color: rgb(112, 112, 112);
+    font-family: 'Verdana';
+    font-size: 11pt;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.signup-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-itens h1{
+    position: relative; float: left;
+    margin-top: 63%;
+    color: white;
+    font-family: 'Verdana';
+    font-size: 32pt;
+    cursor: default;
+}
+div#campos2{
+    position: absolute; top: 66%; left: 50%;transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#enteryour{
+    position: absolute; top: 2%; left: 50%;transform: translate(-50%, -50%);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#enteryour p{
+    color: rgb(225, 225, 225);
+    font-family: 'Verdana';
+    font-size: 11pt;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div#btn2{
+    position: absolute; top: 65%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 7.5%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+div#btn2:hover{
+    position: absolute; top: 65%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 8%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.6); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    transition: 1s;
+}
+div#btn3{
+    position: absolute; top: 65%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 7.5%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+div#btn3:hover{
+    position: absolute; top: 65%; left: 50%;transform: translate(-50%, -50%);
+    width: 40%;
+    height: 8%;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, rgb(255,0,0), rgb(255, 0, 65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.6); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+    transition: 1s;
+}

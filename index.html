@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="body">
+        <div id="telas">
+            <div id="signin">
+                <div class="signin-itens">
+                    <div id="texto"><h1>Sign in</h1></div>
+                    </div>
+                    <div id="campos">
+                        <div id="your"><p>or use your account</p></div>
+                        <div class="inputtext">
+                        <input type="text" name="username" id="username" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                        <div id="forgot"><a href="https://www.smogon.com/dex/sv/pokemon/">Forgot your password?</a></div>
+                    </div>
+                    <div id="btn">SIGN IN</div>
+                    <div class="logos">
+                        <div id="facebook"><img src="images/facebook-logo-108.png" alt=""></div>
+                        <div id="google"><img src="images/google-plus-110 (1).png" alt=""></div>
+                        <div id="linkedin"><img src="images/linkedin-112 (1).png" alt=""></div>
+                    </div>
+            </div>
+            <div id="signup"><div class="signup-itens">
+                <div id="texto2"><h1>Hello, Friend!</h1></div>
+                </div>
+                <div id="campos2">
+                    <div id="enteryour"><p>Enter your personal details and start journey with us</p></div>
+                </div>
+                <div id="btn2" onclick="signup()">SIGN UP</div>
+                <div id="btn3" onclick="signin()">SIGN UP</div>
+                </div>
+            </div>
+    </div>
+    <script>
+        function signup() {
+            let telasignup = window.document.querySelector("div#signup");
+            let telasignin = window.document.querySelector("div#signin");
+            telasignin.style.transition = "0.5s"
+            telasignup.style.transition = "0.5s"
+            telasignin.style.transform = "translateX(100%)"
+            telasignup.style.transform = "translateX(-100%)"
+
+            telasignup.style.borderTopLeftRadius = "10px";
+            telasignup.style.borderBottomLeftRadius = "10px";
+            telasignup.style.borderTopRightRadius = "0px";
+            telasignup.style.borderBottomRightRadius = "0px";
+
+            telasignin.style.borderTopRightRadius = "10px";
+            telasignin.style.borderBottomRightRadius = "10px";
+            telasignin.style.borderTopLeftRadius = "0px";
+            telasignin.style.borderBottomLeftRadius = "0px";
+
+            //
+
+            let btsignin = window.document.querySelector("div#btn");
+            let btsignup = window.document.querySelector("div#btn2");
+            let btn3 = window.document.querySelector("div#btn3");
+            btsignin.style.top = "85%"
+            btsignin.innerText = "SIGN UP"
+            btsignup.innerText = "SIGN IN"
+            btsignup.style.display = "none"
+            btn3.style.display = "flex"
+
+            //
+
+            let text2 = window.document.querySelector("div#texto2 h1");
+            let enteryour = window.document.querySelector("div#enteryour p");
+            text2.style.marginTop = "55%"
+            text2.innerText = "Welcome Back!"
+            enteryour.innerText = "To keep connected with us please login with your personal info"
+
+            //
+
+            let text = window.document.querySelector("div#texto h1");
+            let your = window.document.querySelector("div#your p");
+            text.style.marginTop = "30%"
+            text.innerText = "Create Account"
+            your.innerText = "or use your email for registration"
+            //
+            let forgot = window.document.querySelector("div#forgot");
+            forgot.style.display = "none";
+            //
+            let username = window.document.querySelector("input#username");
+            username.style.display = "block"
+            //
+
+
+        }
+
+
+        function signin() {
+            let telasignup = window.document.querySelector("div#signup");
+            let telasignin = window.document.querySelector("div#signin");
+
+            telasignin.style.transition = "0.5s"
+            telasignup.style.transition = "0.5s"
+            telasignin.style.transform = "translateX(-0%)"
+            telasignup.style.transform = "translateX(0%)"
+
+            telasignup.style.borderTopLeftRadius = "0px";
+            telasignup.style.borderBottomLeftRadius = "0px";
+            telasignup.style.borderTopRightRadius = "10px";
+            telasignup.style.borderBottomRightRadius = "10px";
+
+            telasignin.style.borderTopRightRadius = "0px";
+            telasignin.style.borderBottomRightRadius = "0px";
+            telasignin.style.borderTopLeftRadius = "10px";
+            telasignin.style.borderBottomLeftRadius = "10px";
+
+            let btsignin = window.document.querySelector("div#btn");
+            btsignin.style.top = "80%"
+
+            let btn3 = window.document.querySelector("div#btn3");
+            let btsignup = window.document.querySelector("div#btn2");
+            btsignup.style.display = "flex"
+            btn3.style.display = "none"
+
+
+            //
+            
+            let text2 = window.document.querySelector("div#texto2 h1");
+            let enteryour = window.document.querySelector("div#enteryour p");
+            text2.style.marginTop = "63%"
+            text2.innerText = "Hello, Friend!!"
+            enteryour.innerText = "Enter your personal details and start journey with us"
+
+
+            //
+
+
+            let text = window.document.querySelector("div#texto h1");
+            let your = window.document.querySelector("div#your p");
+            text.style.marginTop = "70%"
+            text.innerText = "Sign In"
+            your.innerText = "or use your account"
+            //
+            let forgot = window.document.querySelector("div#forgot");
+            forgot.style.display = "block";
+            //
+            let username = window.document.querySelector("input#username");
+            username.style.display = "none"
+
+        }
+    </script>
+
+
+</body>
+</html>
